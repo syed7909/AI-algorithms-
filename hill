@@ -1,0 +1,48 @@
+a=[[1,3,5,6,8],
+    [2,3,4,5,7],
+    [1,2,3,4,5],
+    [12,3,4,65,4]
+]
+n=4     #rows
+m=5     #column     #static 
+l=[]
+Node=a[0][0]
+q=0
+w=0
+
+class node:
+    
+    def hill(Node):
+        if node==None:
+            return
+        for q in range (n):
+            for w in range (m):
+                if node[i][j]<node[i][j+1]:
+                   # node[i][j]=node[i][j+1]  #right movement 
+                    l.append(node[i][j+1])
+
+                if node[i][j]<node[i+1][j]:
+                    #node[i][j]=node[i+1][j]  #down 
+                    l.append(node[i+1][j])
+
+                if node[i][j]<node[i-1][j]:
+                    #node[i][j]=node[i-1][j]
+                    l.append(node[i-1][j])
+        
+                if node[i][j]<node[i][j-1]:
+                    #node[i][j]=node[i][j-1]:
+                    l.append(node[i][j-1])
+            
+
+
+    def marx(l):
+        x=max(a)
+        print("Global max is:",x)
+        return
+    
+        
+n=node()
+n.hill()
+n.marx(l)
+
+ 
